@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useDisclosure } from '@heroui/react';
 import { usePathname } from 'next/navigation';
 
-import { getCookie, setCookie, deleteCookie } from 'cookies-next';
+import { getCookie, setCookie } from 'cookies-next';
 
 import Button from '../buttons/Button';
 import GlobalModal from '../modals/Modal';
@@ -23,7 +23,7 @@ const CookieConsent = () => {
   useEffect(() => {
     const checkStatus = getCookie('consent');
     if (
-      ['essential-only', 'accept-all'].includes(String(checkStatus)) ||
+      ['essential-only', 'accept-all', 'rejected-all'].includes(String(checkStatus)) ||
       path === '/privacyPolicy'
     ) {
       setShowConsent(false);
@@ -34,8 +34,8 @@ const CookieConsent = () => {
   }, [path, showConsent, pathname]);
 
   const handleReject = () => {
-    deleteCookie('consent');
-    setShowConsent(true);
+    setCookie('consent', 'rejected-all');
+    setShowConsent(false);
     onClose();
   };
 
@@ -49,8 +49,6 @@ const CookieConsent = () => {
     setCookie('consent', 'essential-only');
     setShowConsent(false);
   };
-
-  console.log(pathname);
 
   return (
     <>
@@ -84,7 +82,7 @@ const CookieConsent = () => {
               device to improve our products and personalize ads and other contents throughout this
               website. You may accept all or part of these operations. To learn more about cookies,
               partners, and how we use your data, to review your options or these operations for
-              each partner, visit our
+              each partner, visit our {''}
               <Link href="/privacyPolicy" onClick={onClose}>
                 <span className="text-gray-500 underline cursor-pointer">Privacy Policy</span>.
               </Link>

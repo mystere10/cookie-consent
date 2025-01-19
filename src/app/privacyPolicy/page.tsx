@@ -11,14 +11,14 @@ const PrivacyPolicy = () => {
         website or use our services, including how we use cookies and similar tracking technologies.
       </p>
 
-      <h3 className="text-xs font-bold">What Are Cookies?</h3>
+      <strong>What Are Cookies?</strong>
       <p>
         Cookies are small text files stored on your device (computer, tablet, or smartphone) when
         you visit a website. They are widely used to make websites work more efficiently, as well as
         to provide information to the website owners.
       </p>
 
-      <h3 className="text-xs font-bold">Types of Cookies We Use</h3>
+      <strong>Types of Cookies We Use</strong>
       <ul>
         <li>
           <strong>Essential Cookies:</strong> These cookies are necessary for the website to
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
         </li>
       </ul>
 
-      <h3 className="text-xs font-bold">How We Use Cookies</h3>
+      <strong>How We Use Cookies</strong>
       <p>We use cookies to:</p>
       <ul>
         <li>Remember your preferences and settings.</li>
@@ -47,14 +47,14 @@ const PrivacyPolicy = () => {
         <li>Improve the performance and functionality of our services.</li>
       </ul>
 
-      <h3 className="text-xs font-bold">Your Consent</h3>
+      <strong>Your Consent</strong>
       <p>
         By using our website, you consent to our use of cookies as described in this policy. You can
         manage your cookie preferences at any time by adjusting your browser settings or using our
         cookie management tool.
       </p>
 
-      <h3 className="text-xs font-bold">Managing Cookies</h3>
+      <strong>Managing Cookies</strong>
       <p>You can control and manage cookies in various ways:</p>
       <ul>
         <li>
@@ -67,13 +67,13 @@ const PrivacyPolicy = () => {
         </li>
       </ul>
 
-      <h3 className="text-xs font-bold">Changes to This Policy</h3>
+      <strong>Changes to This Policy</strong>
       <p>
         We may update this Privacy Policy from time to time. Any changes will be posted on this page
         with a revised Last Updated&quot; date. We encourage you to review this policy periodically.
       </p>
 
-      <h3 className="text-xs font-bold">Contact Us</h3>
+      <strong>Contact Us</strong>
       <p>
         If you have any questions or concerns about our use of cookies or this Privacy Policy,
         please contact us at:

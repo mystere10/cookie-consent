@@ -3,7 +3,7 @@ import './button.css';
 
 export interface ButtonProps {
   type: 'primary' | 'secondary';
-  size?: 'small' | 'medium' | 'large'; // Your custom size prop
+  size?: 'small' | 'medium' | 'large';
   label: string;
   onClick?: () => void;
 }

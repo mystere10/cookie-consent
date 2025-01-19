@@ -14,11 +14,17 @@
   }
 }
 
+html, body{
+    height: fit-content
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

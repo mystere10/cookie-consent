@@ -6,12 +6,12 @@ type Props = {
   body: ReactNode;
   isOpen: boolean;
   onClose: () => void;
-  btns: React.ReactNode;
+  btns?: React.ReactNode;
 };
 
 const GlobalModal = ({ title, body, isOpen, onClose, btns }: Props) => {
   return (
-    <Modal isOpen={isOpen} size={'3xl'} onClose={onClose}>
+    <Modal isOpen={isOpen} size={'3xl'} onClose={onClose} className='rounded-3xl'>
       <ModalContent>
         <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
         <ModalBody>{body}</ModalBody>
