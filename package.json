@@ -11,6 +11,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@heroui/react": "^2.6.14",
+    "cookies-next": "^5.1.0",
+    "framer-motion": "^11.18.1",
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
